@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+   int ch,a;
+   printf("Welcome to Quarantine Cafe");
+   do 
+   {
+      printf("\nEnter your order: 0.Cold Coffee 1. Pizza\n");
+      scanf("%d",&ch);
+      switch(ch)
+      {
+      	case 0: printf("Food item:Cold Coffee\nPrice:Rs.125");
+      	        break;
+      	case 1:printf("Food item:Pizza\nPrice:Rs.189");
+      	       break;
+      	default:printf("Enter valid order");
+      }
+      printf("\nPress 2 to continue ordering");
+      scanf("%d",&a);
+     }while(a==2);
+     return 0;
+}
